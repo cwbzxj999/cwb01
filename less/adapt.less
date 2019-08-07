@@ -1,0 +1,24 @@
+
+// 定义一个变量用来保存将来用户要分为多少份
+@num: 20;
+
+// 适配 320px
+@media only screen and (width: 320px) {
+     html {
+         font-size: 320px / @num;
+     }
+}
+
+// 适配 375px
+@media only screen and (width: 375px) {
+    html {
+        font-size: 375px / @num;
+    }
+}
+
+// 适配 768px
+@media only screen and (width: 768px) {
+    html {
+        font-size: 768px / @num;
+    }
+}

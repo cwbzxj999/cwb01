@@ -1,0 +1,263 @@
+@number:20;
+@size:640px/@number;
+
+
+.m_body{
+    width: 100%;
+    background: #f1f1f1;
+
+    // 顶部导航
+    .header_nav{
+        width: 100%;
+        height: 45rem/@size;
+        line-height: 45rem/@size;
+        background: #f7f7f7;
+        padding: 0 12rem/@size;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        .nav_left{
+            span{
+                color: #d3079e;
+                font-size: 14rem/@size;
+            }
+            span:last-child{
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-top: 6rem/@size solid #d3079e;
+                border-left: 6rem/@size solid transparent;
+                border-right: 6rem/@size solid transparent;
+                border-bottom: 6rem/@size solid transparent;
+                margin-top: 6rem/@size;
+            }
+        }
+        .nav_center{
+            span{
+                font-size: 20rem/@size;
+            }
+        }
+        .nav_right{
+            width: 25rem/@size;
+            a{
+                width: 100%;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    // banner广告
+    .banner{
+        width: 100%;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .circle{
+            width: 140rem/@size; 
+            position: absolute;
+            bottom: 4rem/@size;
+            left: 50%;
+            transform: translate(-50%);
+            .item{
+                float: left;
+                width: 10rem/@size;
+                height: 10rem/@size;
+                background: #ffffff;
+                opacity: 0.5;
+                border-radius: 50%;
+                margin: 0 5rem/@size;
+            }
+        }
+    }
+
+    // 图片列表部分
+    .pic_list{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 8rem/@size;
+        padding: 0 5rem/@size;
+        box-sizing: border-box;
+        justify-content: space-between;
+        a{
+            width: 32%;
+            margin-bottom: 10rem/@size;
+            img{
+                width: 100%;
+            }
+        }
+       
+    }
+
+    // 小图片部分
+    .table{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1rem/@size solid #d1d1d1;
+        margin-bottom: 15rem/@size;
+        .table_item{
+            width: 25%;
+            border-top: 1rem/@size solid #d1d1d1;
+            border-right: 1rem/@size solid #d1d1d1;
+            box-sizing: border-box;
+            img{
+                width: 100%;
+            }
+        }
+        .table_item:nth-child(4n){
+            border-right: none;
+        }
+
+    }
+
+    // 驴阅亲子图片
+    .son{
+        width: 100%;
+        display: flex;
+        .son_left{
+            width: 50%;
+            border-right: 1rem/@size solid #d1d1d1;
+            box-sizing: border-box;
+            img{
+                width: 100%;
+            }
+        }
+        .son_right{
+            width: 50%;
+            img{
+                width: 100%;
+                box-sizing: border-box;
+            }
+            img:first-child{
+                border-bottom: 1rem/@size solid #d1d1d1;
+            }
+        }
+    }
+
+    // 热门活动
+    .hot{
+        width: 100%;
+        margin-bottom: 15rem/@size;
+        .hot_title{
+            border-top: 1rem/@size solid #d1d1d1;
+            border-bottom: 1rem/@size solid #d1d1d1;
+            .top{
+                width: 100%;
+                height: 15rem/@size;
+                background: #f7f7f7;
+            }
+            .bot{
+                width: 100%;
+                height: 35rem/@size;
+                line-height: 35rem/@size;
+                background: #f1f1f1;
+                color: #7e7a89;
+                padding-left: 15rem/@size;
+                box-sizing: border-box;
+            }
+        }
+
+        .hot_con{
+            width: 100%;
+            a{
+                width: 100%;
+            }
+            img{
+                width: 100%;
+                border-bottom: 1rem/@size solid #d1d1d1;
+            }
+        }
+    }
+
+    // 度周末
+    .week{
+        width: 100%;
+        border-top: 1rem/@size solid #d1d1d1;
+        .week_nav{
+            width: 100%;
+            height: 44rem/@size;
+            line-height: 44rem/@size;
+            color: #888;
+            background: #f7f7f7;
+            padding: 0 125rem/@size;
+            box-sizing: border-box;
+            a{
+                padding: 0 5rem/@size;
+            }
+            a:first-child{
+                color: #d3079e;
+                border-bottom: 1rem/@size solid #d3079e;
+            }
+        }
+        .week_con{
+            width: 100%;
+        }
+        .week_con_item{
+            width: 100%;
+            margin-bottom: 15rem/@size;
+            img{
+                width: 100%;
+            }
+            p:nth-child(2){
+                font-size: 14rem/@size;
+                background: #fff;
+            }
+            p:nth-child(3){
+                font-size: 18rem/@size;
+                color: #888;
+                background: #fff;
+            }
+        }
+    }
+
+    // 底部
+    .footer{
+        width: 100%;
+        .more{
+            width: 100%;
+            height: 40rem/@size;
+            line-height: 40rem/@size;
+            text-align: center;
+            background: #fff;
+            margin-bottom: 15rem/@size;
+            a{
+                font-size: 14rem/@size;
+                color: #888;
+                margin-right: 15rem/@size;
+            }
+            i{
+                font-size: 14rem/@size;
+                font-weight: 700;
+                color: #888;
+            }
+        }
+        .nav{
+            width: 100%;
+            height: 40rem/@size;
+            line-height: 40rem/@size;
+            padding: 0 10rem/@size;
+            box-sizing: border-box;
+            background: #d3079e;
+            color: #fff;
+            li{
+                float: left;
+                a{
+                    font-size: 16rem/@size;
+                    color: #fff;
+                    margin-right: 10rem/@size;
+                }
+            }
+            .right{
+                span{
+                  font-size: 16rem/@size; 
+                  font-weight: 700; 
+                }
+                
+            }
+        }
+    }
+}
